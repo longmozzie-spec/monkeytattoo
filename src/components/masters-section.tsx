@@ -42,7 +42,7 @@ export function MastersSection() {
   return (
     <section id="masters" className="relative bg-black py-12 md:py-32 overflow-hidden">
       {/* ====== TITLE ====== */}
-      <div className="relative z-30 text-center mb-6 md:mb-16 px-4">
+      <div className="relative z-30 text-center mb-10 md:mb-16 px-4">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
