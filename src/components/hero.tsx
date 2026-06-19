@@ -182,7 +182,7 @@ export function Hero() {
           initial={reduce ? false : { opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-[1.3] md:leading-[1.1] tracking-tight"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-[1.5] md:leading-[1.3] tracking-tight"
         >
           Khắc Họa Khí Chất
           <br />

@@ -11,7 +11,7 @@ export function ArtistsSection() {
   return (
     <section className="py-32 px-6 bg-surface">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[1.1] mb-16">
+        <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.5] md:leading-[1.3] mb-16">
           Đội Ngũ <span className="text-accent">Nghệ Sĩ</span>
         </h2>
 

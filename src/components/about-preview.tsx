@@ -8,7 +8,7 @@ export function AboutPreview() {
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         <div className="lg:col-span-3">
           <ScrollReveal>
-            <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[1.1]">
+            <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.5] md:leading-[1.3]">
               Không chỉ là
               <br />
               <span className="text-accent">hình xăm</span>
@@ -61,7 +61,7 @@ export function TeamSection() {
     <section className="py-32 px-6 bg-surface">
       <div className="max-w-[1400px] mx-auto">
         <ScrollReveal>
-          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[1.1] mb-4">
+          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.5] md:leading-[1.3] mb-4">
             Dàn Nhân Sự
             <br />
             <span className="text-accent">Tràn Đầy Nhiệt Huyết</span>

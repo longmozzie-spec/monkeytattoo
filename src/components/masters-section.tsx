@@ -78,7 +78,7 @@ export function MastersSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }}
-          className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-extralight uppercase tracking-[0.2em] text-white leading-tight md:leading-none"
+          className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-extralight uppercase tracking-[0.2em] text-white leading-[1.5] md:leading-[1.3]"
         >
           Nghệ Thuật
         </motion.h2>
