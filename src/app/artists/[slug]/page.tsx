@@ -42,7 +42,7 @@ export default async function ArtistPage({
 
               <div className="lg:col-span-3">
                 <ScrollReveal>
-                  <h1 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[0.9]">
+                  <h1 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[1.1]">
                     {artist.name}
                   </h1>
                   <p className="mt-4 text-accent text-sm font-bold uppercase tracking-wider">

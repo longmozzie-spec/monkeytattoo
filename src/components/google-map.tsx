@@ -5,7 +5,7 @@ export function GoogleMap() {
     <section className="py-32 px-6 bg-surface">
       <div className="max-w-[1400px] mx-auto">
         <ScrollReveal>
-          <h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-tight leading-[1.3] md:leading-[0.9] mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-tight leading-[1.3] md:leading-[1.1] mb-6">
             Tìm Đến <span className="text-accent">Chúng Tôi</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-[50ch] mb-12">
