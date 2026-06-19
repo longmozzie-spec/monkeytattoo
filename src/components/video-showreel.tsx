@@ -53,7 +53,7 @@ export function VideoShowreel() {
   const displayVideos = [...videos, ...videos];
 
   return (
-    <section className="py-32 bg-black overflow-hidden">
+    <section className="py-32 bg-background overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 mb-16">
         <ScrollReveal>
           <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.5] md:leading-[1.3]">

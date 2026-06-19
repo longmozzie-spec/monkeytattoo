@@ -44,7 +44,7 @@ export function MastersSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section id="masters" className="relative bg-black py-12 md:py-32 overflow-hidden">
+    <section id="masters" className="relative bg-background py-12 md:py-32 overflow-hidden">
       {/* ====== TITLE ====== */}
       <div className="relative z-30 text-center mb-10 md:mb-16 px-4">
         <motion.h2
