@@ -52,6 +52,15 @@ export function MastersSection() {
         >
           Nghệ Thuật
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
+          className="font-display text-[clamp(1.2rem,4vw,3.5rem)] font-extralight uppercase tracking-[0.3em] text-white/50 mt-2 md:mt-4"
+        >
+          Qua Từng Tác Phẩm
+        </motion.p>
       </div>
 
       {/* ====== SCROLL VELOCITY GALLERY ====== */}
