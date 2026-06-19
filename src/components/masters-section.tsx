@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { ScrollVelocity } from "@/components/ui/scroll-velocity";
+import { X } from "@phosphor-icons/react";
 
 const galleryImages = [
   "/images/gallery/work-01.jpeg",
@@ -39,6 +41,8 @@ const row1 = galleryImages.slice(0, 14);
 const row2 = galleryImages.slice(14);
 
 export function MastersSection() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="masters" className="relative bg-black py-12 md:py-32 overflow-hidden">
       {/* ====== TITLE ====== */}
@@ -69,14 +73,15 @@ export function MastersSection() {
           {row1.map((src) => (
             <div
               key={src}
-              className="relative h-[200px] w-[150px] md:h-[320px] md:w-[240px] overflow-hidden rounded-sm"
+              className="relative h-[280px] w-[210px] md:h-[420px] md:w-[320px] overflow-hidden rounded-sm cursor-pointer"
+              onClick={() => setSelectedImage(src)}
             >
               <Image
                 src={src}
                 alt="Tattoo artwork"
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 150px, 240px"
+                className="object-cover transition-transform duration-300 hover:scale-105"
+                sizes="(max-width: 768px) 210px, 320px"
               />
             </div>
           ))}
@@ -86,19 +91,57 @@ export function MastersSection() {
           {row2.map((src) => (
             <div
               key={src}
-              className="relative h-[200px] w-[150px] md:h-[320px] md:w-[240px] overflow-hidden rounded-sm"
+              className="relative h-[280px] w-[210px] md:h-[420px] md:w-[320px] overflow-hidden rounded-sm cursor-pointer"
+              onClick={() => setSelectedImage(src)}
             >
               <Image
                 src={src}
                 alt="Tattoo artwork"
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 150px, 240px"
+                className="object-cover transition-transform duration-300 hover:scale-105"
+                sizes="(max-width: 768px) 210px, 320px"
               />
             </div>
           ))}
         </ScrollVelocity>
       </div>
+
+      {/* ====== LIGHTBOX ====== */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+              onClick={() => setSelectedImage(null)}
+              aria-label="Close"
+            >
+              <X size={32} weight="bold" />
+            </button>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative w-full max-w-3xl aspect-[3/4]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={selectedImage}
+                alt="Tattoo artwork"
+                fill
+                className="object-contain"
+                sizes="90vw"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
