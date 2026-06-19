@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { TiktokLogo, FacebookLogo, EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
+import { TiktokLogo, FacebookLogo, EnvelopeSimple, Phone } from "@phosphor-icons/react/dist/ssr";
 
 export function Footer() {
   return (
@@ -60,13 +60,26 @@ export function Footer() {
                 <FacebookLogo size={24} weight="bold" />
               </a>
               <a
-                href="mailto:info@monkeytattoo.vn"
+                href="mailto:quyenct2907@gmail.com"
                 aria-label="Email"
                 className="text-text-secondary hover:text-accent transition-colors"
               >
                 <EnvelopeSimple size={24} weight="bold" />
               </a>
+              <a
+                href="tel:0907573205"
+                aria-label="Phone"
+                className="text-text-secondary hover:text-accent transition-colors"
+              >
+                <Phone size={24} weight="bold" />
+              </a>
             </div>
+            <p className="mt-4 text-text-secondary text-sm">
+              Email: quyenct2907@gmail.com
+            </p>
+            <p className="mt-1 text-text-secondary text-sm">
+              SĐT: 0907 573 205
+            </p>
           </div>
         </div>
 
