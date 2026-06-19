@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 
@@ -61,43 +61,30 @@ function ParallaxImage({
 
 export function MastersSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
   });
-  const titleY = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [150, -150]);
-  const subtitleY = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [100, -100]);
 
   return (
     <section id="masters" ref={sectionRef} className="relative bg-black py-32 md:py-48 overflow-hidden">
       {/* ====== TITLE ====== */}
       <div className="relative z-30 text-center mb-20 md:mb-32 px-4">
         <motion.h2
-          style={isMobile ? undefined : { y: titleY }}
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }}
+          transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
           className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-extralight uppercase tracking-[0.2em] text-white leading-[1.5] md:leading-[1.3]"
         >
           Nghệ Thuật
         </motion.h2>
         <motion.p
-          style={isMobile ? undefined : { y: subtitleY }}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.3, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
-          className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight uppercase tracking-[0.3em] text-white/50 mt-3 md:mt-6"
+          transition={{ duration: 1, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
+          className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight uppercase tracking-[0.3em] text-white/50 mt-4 md:mt-8"
         >
           qua từng tác phẩm
         </motion.p>
