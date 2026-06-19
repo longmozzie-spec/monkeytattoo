@@ -47,7 +47,7 @@ html {
 }
 
 .animate-scroll-left {
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 27s linear infinite;
 }
 
 @keyframes noise-animation {
