@@ -52,7 +52,7 @@ html {
 
 @media (max-width: 767px) {
   .animate-scroll-left {
-    animation: scroll-left 18s linear infinite;
+    animation: scroll-left 12s linear infinite;
   }
 }
 

@@ -51,15 +51,7 @@ function LazyVideo({ src }: { src: string }) {
 }
 
 export function VideoShowreel() {
-  const mobileVideos = videos.slice(0, 6);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-  }, []);
-
-  const source = isMobile ? mobileVideos : videos;
-  const displayVideos = [...source, ...source];
+  const displayVideos = [...videos, ...videos];
 
   return (
     <section className="py-32 bg-black overflow-hidden">
