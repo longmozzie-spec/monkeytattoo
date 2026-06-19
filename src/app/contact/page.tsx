@@ -11,7 +11,7 @@ export default function ContactPage() {
         <section className="py-32 px-6">
           <div className="max-w-[700px] mx-auto">
             <ScrollReveal>
-              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-tighter leading-[1.1] md:leading-[0.85]">
+              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-tighter leading-[1.3] md:leading-[0.85]">
                 Đặt <span className="text-accent">Lịch Xăm</span>
               </h1>
               <p className="mt-6 text-text-secondary text-lg leading-relaxed">
