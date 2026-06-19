@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 
@@ -61,19 +61,28 @@ function ParallaxImage({
 
 export function MastersSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
   });
-  const titleY = useTransform(scrollYProgress, [0, 1], [150, -150]);
-  const subtitleY = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const titleY = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [150, -150]);
+  const subtitleY = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [100, -100]);
 
   return (
     <section id="masters" ref={sectionRef} className="relative bg-black py-32 md:py-48 overflow-hidden">
       {/* ====== TITLE ====== */}
       <div className="relative z-30 text-center mb-20 md:mb-32 px-4">
         <motion.h2
-          style={{ y: titleY }}
+          style={isMobile ? undefined : { y: titleY }}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -83,7 +92,7 @@ export function MastersSection() {
           Nghệ Thuật
         </motion.h2>
         <motion.p
-          style={{ y: subtitleY }}
+          style={isMobile ? undefined : { y: subtitleY }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
