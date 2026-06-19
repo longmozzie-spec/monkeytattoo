@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { ScrollReveal } from "./scroll-reveal";
 
 const videos = [
@@ -16,8 +17,49 @@ const videos = [
   "/videos/clip-11.mp4",
 ];
 
+function LazyVideo({ src }: { src: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={ref}
+      src={isVisible ? src : undefined}
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+    />
+  );
+}
+
 export function VideoShowreel() {
-  const displayVideos = [...videos, ...videos];
+  const mobileVideos = videos.slice(0, 6);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
+  const source = isMobile ? mobileVideos : videos;
+  const displayVideos = [...source, ...source];
 
   return (
     <section className="py-32 bg-black overflow-hidden">
@@ -36,20 +78,13 @@ export function VideoShowreel() {
       </div>
 
       <div className="relative w-full">
-        <div className="flex gap-4 animate-scroll-left hover:[animation-play-state:paused]">
+        <div className="flex gap-4 animate-scroll-left will-change-transform hover:[animation-play-state:paused]">
           {displayVideos.map((src, i) => (
             <div
               key={`${src}-${i}`}
               className="flex-shrink-0 w-[300px] md:w-[400px] aspect-[9/16] rounded-lg overflow-hidden bg-surface"
             >
-              <video
-                src={src}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
-              />
+              <LazyVideo src={src} />
             </div>
           ))}
         </div>

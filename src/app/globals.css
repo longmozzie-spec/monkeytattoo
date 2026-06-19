@@ -50,6 +50,12 @@ html {
   animation: scroll-left 27s linear infinite;
 }
 
+@media (max-width: 767px) {
+  .animate-scroll-left {
+    animation: scroll-left 18s linear infinite;
+  }
+}
+
 @keyframes noise-animation {
   0% { transform: translate(0, 0); }
   10% { transform: translate(-2%, -3%); }
