@@ -24,17 +24,9 @@ export function ClientsSection() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.5] md:leading-[1.3]">
-            Những Gương Mặt &<br />
-            <span className="text-accent">Những Tác Phẩm Để Đời</span>
+            Nụ Cười Của Khách<br />
+            <span className="text-accent">Là Động Lực Sáng Tạo Của Chúng Tôi</span>
           </h2>
-          <p className="mt-8 text-text-secondary text-lg leading-relaxed max-w-[65ch]">
-            Hình xăm trên da là dấu ấn của riêng bạn, nhưng khoảnh khắc chúng
-            ta tạo ra nó là kỷ niệm chung. Tại đây, chúng tôi không chỉ tạo ra
-            nghệ thuật, mà còn tạo ra những sự kết nối tuyệt vời. Cảm ơn các
-            anh em, bạn bè đã đến, tin tưởng và cháy hết mình cùng đam mê. Dưới
-            đây là những gương mặt đã cùng chúng tôi tạo nên những tác phẩm để
-            đời.
-          </p>
         </motion.div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-3">
