@@ -14,7 +14,6 @@ const videos = [
   "/videos/clip-08.mp4",
   "/videos/clip-09.mp4",
   "/videos/clip-10.mp4",
-  "/videos/clip-11.mp4",
 ];
 
 function LazyVideo({ src }: { src: string }) {
