@@ -23,7 +23,7 @@ export function ClientsSection() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[0.9]">
+          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.1] md:leading-[0.9]">
             Những Gương Mặt &<br />
             <span className="text-accent">Những Tác Phẩm Để Đời</span>
           </h2>

@@ -84,7 +84,7 @@ export default function FaqPage() {
         <section className="py-32 px-6">
           <div className="max-w-[800px] mx-auto">
             <ScrollReveal>
-              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-tighter leading-[0.85] mb-4">
+              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-tighter leading-[1.1] md:leading-[0.85] mb-4">
                 Câu Hỏi <span className="text-accent">Thường Gặp</span>
               </h1>
               <p className="text-text-secondary text-lg mb-16">

@@ -44,7 +44,7 @@ export function FaqAccordion({ items = defaultFaqs }: { items?: FaqItem[] }) {
   return (
     <section className="py-32 px-6">
       <div className="max-w-[800px] mx-auto">
-        <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[0.9] mb-16">
+        <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tighter leading-[1.1] md:leading-[0.9] mb-16">
           Câu Hỏi <span className="text-accent">Thường Gặp</span>
         </h2>
 
