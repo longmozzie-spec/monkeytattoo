@@ -67,9 +67,9 @@ export function MastersSection() {
   });
 
   return (
-    <section id="masters" ref={sectionRef} className="relative bg-black py-32 md:py-48 overflow-hidden">
+    <section id="masters" ref={sectionRef} className="relative bg-black py-20 md:py-48 overflow-hidden">
       {/* ====== TITLE ====== */}
-      <div className="relative z-30 text-center mb-20 md:mb-32 px-4">
+      <div className="relative z-30 text-center mb-12 md:mb-32 px-4">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,13 +91,13 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 1: Hero spread ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8 mb-24 md:mb-40">
-        <div className="grid grid-cols-12 gap-3 md:gap-5 items-center">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+        <div className="grid grid-cols-12 gap-2 md:gap-5 items-center">
           {/* Left tall */}
           <ParallaxImage
             src="/images/gallery/work-01.jpeg"
             alt="Sleeve tattoo"
-            className="col-span-4 md:col-span-3 aspect-[2/3]"
+            className="col-span-5 md:col-span-3 aspect-[2/3]"
             speed={100}
             delay={0}
           />
@@ -113,7 +113,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-03.jpeg"
             alt="Arm tattoo"
-            className="col-span-6 md:col-span-4 aspect-[3/4] mt-12 md:mt-20"
+            className="col-span-7 md:col-span-4 aspect-[3/4] mt-4 md:mt-20"
             speed={120}
             delay={0.3}
             direction="right"
@@ -122,12 +122,12 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 2: Offset duo ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8 mb-24 md:mb-40">
-        <div className="grid grid-cols-12 gap-3 md:gap-5">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+        <div className="grid grid-cols-12 gap-2 md:gap-5">
           <ParallaxImage
             src="/images/gallery/work-04.jpeg"
             alt="Tattoo artwork"
-            className="col-span-5 md:col-span-4 col-start-1 aspect-[3/4]"
+            className="col-span-6 md:col-span-4 col-start-1 aspect-[3/4]"
             speed={90}
             delay={0}
             direction="left"
@@ -135,7 +135,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-05.jpeg"
             alt="Tattoo artwork"
-            className="col-span-7 md:col-span-5 col-start-6 md:col-start-6 aspect-[4/5] mt-16 md:mt-28"
+            className="col-span-7 md:col-span-5 col-start-6 md:col-start-6 aspect-[4/5] mt-8 md:mt-28"
             speed={60}
             delay={0.2}
           />
@@ -151,12 +151,12 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 3: Cinematic wide ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8 mb-24 md:mb-40">
-        <div className="grid grid-cols-12 gap-3 md:gap-5 items-end">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+        <div className="grid grid-cols-12 gap-2 md:gap-5 items-end">
           <ParallaxImage
             src="/images/gallery/work-07.jpg"
             alt="Tattoo artwork"
-            className="col-span-3 md:col-span-2 aspect-[2/3]"
+            className="col-span-4 md:col-span-2 aspect-[2/3]"
             speed={110}
             delay={0}
           />
@@ -170,7 +170,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-09.jpg"
             alt="Tattoo artwork"
-            className="col-span-4 md:col-span-3 col-start-9 md:col-start-10 aspect-[3/4] -mb-12 md:-mb-20"
+            className="col-span-4 md:col-span-3 col-start-9 md:col-start-10 aspect-[3/4] -mb-4 md:-mb-20"
             speed={95}
             delay={0.25}
             direction="right"
@@ -179,8 +179,8 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 4: Staggered trio ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8 mb-24 md:mb-40">
-        <div className="grid grid-cols-12 gap-3 md:gap-5">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+        <div className="grid grid-cols-12 gap-2 md:gap-5">
           <ParallaxImage
             src="/images/gallery/work-10.jpg"
             alt="Tattoo artwork"
@@ -199,7 +199,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-12.jpg"
             alt="Tattoo artwork"
-            className="col-span-5 md:col-span-4 col-start-8 md:col-start-9 aspect-[4/5] mt-20 md:mt-36"
+            className="col-span-5 md:col-span-4 col-start-8 md:col-start-9 aspect-[4/5] mt-8 md:mt-36"
             speed={55}
             delay={0.2}
           />
@@ -207,8 +207,8 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 5: Asymmetric scatter ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8 mb-24 md:mb-40">
-        <div className="grid grid-cols-12 gap-3 md:gap-5 items-start">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+        <div className="grid grid-cols-12 gap-2 md:gap-5 items-start">
           <ParallaxImage
             src="/images/gallery/work-13.jpg"
             alt="Tattoo artwork"
@@ -219,7 +219,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-14.jpg"
             alt="Tattoo artwork"
-            className="col-span-3 md:col-span-2 col-start-8 md:col-start-7 aspect-[2/3] mt-24 md:mt-40"
+            className="col-span-3 md:col-span-2 col-start-8 md:col-start-7 aspect-[2/3] mt-12 md:mt-40"
             speed={130}
             delay={0.25}
             direction="right"
@@ -235,12 +235,12 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 6: Final statement ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-12 gap-3 md:gap-5 items-center">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8">
+        <div className="grid grid-cols-12 gap-2 md:gap-5 items-center">
           <ParallaxImage
             src="/images/gallery/work-16.jpg"
             alt="Tattoo artwork"
-            className="col-span-4 md:col-span-3 aspect-[2/3] mt-12 md:mt-20"
+            className="col-span-4 md:col-span-3 aspect-[2/3] mt-4 md:mt-20"
             speed={100}
             delay={0}
             direction="left"
@@ -255,7 +255,7 @@ export function MastersSection() {
           <ParallaxImage
             src="/images/gallery/work-18.jpg"
             alt="Tattoo artwork"
-            className="col-span-4 md:col-span-3 col-start-9 md:col-start-8 aspect-[2/3] mt-16 md:mt-28"
+            className="col-span-4 md:col-span-3 col-start-9 md:col-start-8 aspect-[2/3] mt-8 md:mt-28"
             speed={120}
             delay={0.3}
             direction="right"
