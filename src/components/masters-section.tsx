@@ -67,9 +67,9 @@ export function MastersSection() {
   });
 
   return (
-    <section id="masters" ref={sectionRef} className="relative bg-black py-20 md:py-48 overflow-hidden">
+    <section id="masters" ref={sectionRef} className="relative bg-black py-12 md:py-48 overflow-hidden">
       {/* ====== TITLE ====== */}
-      <div className="relative z-30 text-center mb-12 md:mb-32 px-4">
+      <div className="relative z-30 text-center mb-6 md:mb-32 px-4">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 1: Hero spread ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-4 md:mb-40">
         <div className="grid grid-cols-12 gap-2 md:gap-5 items-center">
           {/* Left tall */}
           <ParallaxImage
@@ -122,7 +122,7 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 2: Offset duo ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-4 md:mb-40">
         <div className="grid grid-cols-12 gap-2 md:gap-5">
           <ParallaxImage
             src="/images/gallery/work-04.jpeg"
@@ -151,7 +151,7 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 3: Cinematic wide ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-4 md:mb-40">
         <div className="grid grid-cols-12 gap-2 md:gap-5 items-end">
           <ParallaxImage
             src="/images/gallery/work-07.jpg"
@@ -179,7 +179,7 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 4: Staggered trio ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-4 md:mb-40">
         <div className="grid grid-cols-12 gap-2 md:gap-5">
           <ParallaxImage
             src="/images/gallery/work-10.jpg"
@@ -207,7 +207,7 @@ export function MastersSection() {
       </div>
 
       {/* ====== CLUSTER 5: Asymmetric scatter ====== */}
-      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-8 md:mb-40">
+      <div className="relative max-w-[1500px] mx-auto px-2 md:px-8 mb-4 md:mb-40">
         <div className="grid grid-cols-12 gap-2 md:gap-5 items-start">
           <ParallaxImage
             src="/images/gallery/work-13.jpg"
