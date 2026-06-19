@@ -23,6 +23,15 @@ const galleryImages = [
   "/images/gallery/work-17.jpg",
   "/images/gallery/work-18.jpg",
   "/images/gallery/work-19.jpg",
+  "/images/gallery/work-20.jpg",
+  "/images/gallery/work-21.jpg",
+  "/images/gallery/work-22.jpg",
+  "/images/gallery/work-23.jpg",
+  "/images/gallery/work-24.jpg",
+  "/images/gallery/work-25.jpg",
+  "/images/gallery/work-26.jpg",
+  "/images/gallery/work-27.jpg",
+  "/images/gallery/work-28.jpg",
 ];
 
 export function MastersSection() {
