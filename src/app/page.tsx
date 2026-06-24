@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation";
 import { Hero } from "@/components/hero";
 import { MastersSection } from "@/components/masters-section";
 import { AboutPreview, TeamSection } from "@/components/about-preview";
+import { StudioGallery } from "@/components/studio-gallery";
 import { VideoShowreel } from "@/components/video-showreel";
 import { ClientsSection } from "@/components/clients-section";
 import { Testimonial } from "@/components/testimonial";
@@ -18,6 +19,7 @@ export default function Home() {
         <MastersSection />
         <AboutPreview />
         <TeamSection />
+        <StudioGallery />
         <VideoShowreel />
         <ClientsSection />
         <Testimonial />

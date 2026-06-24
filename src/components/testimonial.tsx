@@ -6,7 +6,7 @@ export function Testimonial() {
       <div className="max-w-[900px] mx-auto">
         <ScrollReveal>
           <blockquote className="border-l-4 border-accent pl-8">
-            <p className="font-display text-2xl md:text-4xl font-bold leading-tight">
+            <p className="font-display text-2xl md:text-4xl font-bold">
               "Mình đã đi xăm ở nhiều nơi nhưng chưa đâu khiến mình thoải mái
               và hài lòng như ở đây. Tay nghề quá đỉnh."
             </p>

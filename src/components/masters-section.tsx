@@ -52,7 +52,7 @@ export function MastersSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
-          className="font-display text-[clamp(2rem,7vw,6.5rem)] font-extralight uppercase tracking-[0.2em] text-white leading-[1.3]"
+          className="font-display text-[clamp(2rem,7vw,6.5rem)] font-extralight uppercase tracking-[0.2em] text-white"
         >
           Nghệ Thuật
         </motion.h2>

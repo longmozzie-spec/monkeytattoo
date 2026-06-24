@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Oswald, Montserrat, Open_Sans } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
 import { LayoutPreloader } from "@/components/layout-preloader";
 import "./globals.css";
 
@@ -7,18 +7,6 @@ const inter = Inter({
   variable: "--font-body",
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const oswald = Oswald({
-  variable: "--font-display",
-  subsets: ["latin", "vietnamese"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-heading",
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700", "800"],
 });
 
 const openSans = Open_Sans({
@@ -41,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${inter.variable} ${oswald.variable} ${montserrat.variable} ${openSans.variable} antialiased`}
+      className={`${inter.variable} ${openSans.variable} antialiased`}
     >
       <body className="bg-background text-foreground min-h-[100dvh]">
         <LayoutPreloader>{children}</LayoutPreloader>
