@@ -4,6 +4,8 @@ import { useState } from "react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   if (submitted) {
     return (
@@ -20,9 +22,22 @@ export function ContactForm() {
 
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setLoading(true);
+        setError("");
+        const data = Object.fromEntries(new FormData(e.currentTarget));
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) {
+          setSubmitted(true);
+        } else {
+          setError("Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ trực tiếp.");
+        }
+        setLoading(false);
       }}
       className="space-y-6"
     >
@@ -114,10 +129,15 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full bg-accent text-foreground py-4 text-sm font-bold uppercase tracking-wider hover:bg-accent/85 transition-colors duration-300 active:scale-[0.99]"
+        disabled={loading}
+        className="w-full bg-accent text-foreground py-4 text-sm font-bold uppercase tracking-wider hover:bg-accent/85 transition-colors duration-300 active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Gửi Yêu Cầu
+        {loading ? "Đang gửi..." : "Gửi Yêu Cầu"}
       </button>
+
+      {error && (
+        <p className="text-sm text-red-400 text-center">{error}</p>
+      )}
 
       <p className="text-xs text-text-secondary text-center">
         Tư vấn miễn phí. Cần đặt cọc để giữ lịch hẹn.
