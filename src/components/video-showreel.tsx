@@ -4,8 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { ScrollReveal } from "./scroll-reveal";
 
 const videos = [
-  "/videos/clip-01.mp4",
-  "/videos/clip-02.mp4",
   "/videos/clip-03.mp4",
   "/videos/clip-04.mp4",
   "/videos/clip-05.mp4",
