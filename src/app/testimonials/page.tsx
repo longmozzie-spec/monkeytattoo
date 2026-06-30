@@ -37,7 +37,7 @@ export default function TestimonialsPage() {
         <section className="py-32 px-6">
           <div className="max-w-[1000px] mx-auto">
             <ScrollReveal>
-              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-normal mb-20">
+              <h1 className="font-display text-5xl md:text-7xl font-extrabold tracking-normal uppercase mb-20">
                 Khách Hàng <span className="text-accent">Nói Gì</span>
               </h1>
             </ScrollReveal>

@@ -8,10 +8,10 @@ export function AboutPreview() {
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         <div className="lg:col-span-3">
           <ScrollReveal>
-            <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-normal">
-              Không chỉ là
+            <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-normal uppercase">
+              Không Chỉ Là
               <br />
-              <span className="text-accent">hình xăm</span>
+              <span className="text-accent">Hình Xăm</span>
             </h2>
             <p className="mt-8 text-text-secondary text-lg leading-relaxed max-w-[50ch]">
               Monkey Tattoo là nơi nghệ thuật gặp gỡ đam mê. Chúng tôi chuyên
@@ -61,7 +61,7 @@ export function TeamSection() {
     <section className="py-32 px-6 bg-surface">
       <div className="max-w-[1400px] mx-auto">
         <ScrollReveal>
-          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-normal mb-4">
+          <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-normal uppercase mb-4">
             Dàn Nhân Sự
             <br />
             <span className="text-accent">Tràn Đầy Nhiệt Huyết</span>

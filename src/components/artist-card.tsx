@@ -11,7 +11,7 @@ export function ArtistsSection() {
   return (
     <section className="py-32 px-6 bg-surface">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-normal mb-16">
+        <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-normal uppercase mb-16">
           Đội Ngũ <span className="text-accent">Nghệ Sĩ</span>
         </h2>
 
@@ -39,7 +39,7 @@ export function ArtistsSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    <p className="font-display text-lg font-bold uppercase tracking-wider">
+                    <p className="font-display text-lg font-bold tracking-wider">
                       {artist.name}
                     </p>
                     <p className="text-sm text-text-secondary mt-1">

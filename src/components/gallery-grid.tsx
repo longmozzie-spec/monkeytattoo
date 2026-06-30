@@ -22,7 +22,7 @@ export function GalleryGrid() {
     <section id="gallery" className="py-32 bg-surface overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 mb-16">
         <ScrollReveal>
-          <h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-normal mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-bold tracking-normal uppercase mb-6">
             Tác Phẩm
           </h2>
           <p className="text-text-secondary text-lg max-w-[50ch]">

@@ -6,10 +6,15 @@ import { useReducedMotion } from "motion/react";
 import { ArrowRight } from "@phosphor-icons/react";
 
 const studioImages = [
+  { src: "/images/studio/studio-0.png", alt: "Không gian tiệm xăm MonKey Tattoo" },
   { src: "/images/studio/studio-1.png", alt: "Không gian tiệm xăm MonKey Tattoo" },
   { src: "/images/studio/studio-2.png", alt: "Khu vực tư vấn" },
   { src: "/images/studio/studio-3.png", alt: "Góc làm việc nghệ sĩ" },
   { src: "/images/studio/studio-4.png", alt: "Nội thất tiệm" },
+  { src: "/images/studio/studio-5.png", alt: "Studio MonKey Tattoo" },
+  { src: "/images/studio/studio-6.png", alt: "Studio MonKey Tattoo" },
+  { src: "/images/studio/studio-7.png", alt: "Studio MonKey Tattoo" },
+  { src: "/images/studio/studio-8.png", alt: "Studio MonKey Tattoo" },
 ];
 
 function StudioImageCard({

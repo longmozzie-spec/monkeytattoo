@@ -4,11 +4,12 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 
 const clientPhotos = [
-  { src: "/images/clients/clients-01.jpg", alt: "Khách hàng 1" },
-  { src: "/images/clients/clients-02.jpg", alt: "Khách hàng 2" },
-  { src: "/images/clients/clients-03.jpg", alt: "Khách hàng 3" },
-  { src: "/images/clients/clients-04.jpg", alt: "Khách hàng 4" },
-  { src: "/images/clients/clients-05.jpg", alt: "Khách hàng 5" },
+  { src: "/images/clients/clients-01.png", alt: "Khách hàng 1" },
+  { src: "/images/clients/clients-02.png", alt: "Khách hàng 2" },
+  { src: "/images/clients/clients-03.png", alt: "Khách hàng 3" },
+  { src: "/images/clients/clients-04.png", alt: "Khách hàng 4" },
+  { src: "/images/clients/clients-05.png", alt: "Khách hàng 5" },
+  { src: "/images/clients/client-06.png", alt: "Khách hàng 6" },
 ];
 
 export function ClientsSection() {
@@ -23,7 +24,7 @@ export function ClientsSection() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-normal">
+          <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-normal uppercase">
             Nụ Cười Của Khách<br />
             <span className="text-accent">Là Động Lực Sáng Tạo Của Chúng Tôi</span>
           </h2>

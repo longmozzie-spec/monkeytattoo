@@ -42,7 +42,7 @@ export default async function ArtistPage({
 
               <div className="lg:col-span-3">
                 <ScrollReveal>
-                  <h1 className="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-normal">
+                  <h1 className="font-display text-4xl md:text-6xl font-extrabold tracking-normal uppercase">
                     {artist.name}
                   </h1>
                   <p className="mt-4 text-accent text-sm font-bold uppercase tracking-wider">
@@ -55,7 +55,7 @@ export default async function ArtistPage({
                   </p>
 
                   <div className="mt-12">
-                    <h3 className="font-display text-xl font-bold uppercase tracking-wider mb-6">
+                    <h3 className="font-display text-xl font-bold tracking-wider mb-6">
                       Tác Phẩm
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">

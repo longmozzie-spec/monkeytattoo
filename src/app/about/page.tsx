@@ -11,7 +11,7 @@ export default function AboutPage() {
         <section className="py-32 px-6">
           <div className="max-w-[1400px] mx-auto">
             <ScrollReveal>
-              <h1 className="font-display text-5xl md:text-7xl font-extrabold uppercase tracking-normal">
+              <h1 className="font-display text-5xl md:text-7xl font-extrabold tracking-normal uppercase">
                 Về <span className="text-accent">Monkey Tattoo</span>
               </h1>
             </ScrollReveal>
